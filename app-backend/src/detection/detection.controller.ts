@@ -1,6 +1,6 @@
 import { Controller, Post, Body } from '@nestjs/common';
 import { DetectionService } from './detection.service';
-import { ApiProperty, ApiOperation, ApiBody } from '@nestjs/swagger';
+import { ApiProperty, ApiOperation, ApiBody, ApiTags } from '@nestjs/swagger';
 
 export class inferenceRequest {
   @ApiProperty({ 
@@ -10,6 +10,7 @@ export class inferenceRequest {
   image: string;
 }
 
+@ApiTags('Detection')
 @Controller('detection')
 export class DetectionController {
   constructor(private readonly inferenceService: DetectionService) {}
