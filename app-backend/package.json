@@ -19,7 +19,7 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "generate:docs": "ts-node -r tsconfig-paths/register src/generate-spec.ts",
-    "build:docs": "npm run generate:docs && npx @redocly/cli build-docs public/api-docs/swagger-spec.json --output public/api-docs/index.html"
+    "build:docs": "npm run generate:docs"
   },
   "dependencies": {
     "@nestjs/axios": "^4.0.0",

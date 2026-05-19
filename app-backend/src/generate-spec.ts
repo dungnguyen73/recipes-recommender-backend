@@ -20,6 +20,9 @@ async function bootstrap() {
       .setDescription('The NestJS API description')
       .setVersion('1.0')
       .addBearerAuth()
+      .addServer('http://localhost:3000', 'Local Development Server')
+      .addServer('https://recipes-recommender-backend.vercel.app', 'Production Server (Vercel)')
+      .addServer('/', 'Relative Host (Current Server)')
       .build();
       
     const document = SwaggerModule.createDocument(app, config);

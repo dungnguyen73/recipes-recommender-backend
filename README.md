@@ -2,6 +2,10 @@
 
 Welcome to the general backend repository for the **RecipeLens** application. This project uses a microservices-oriented architecture to deliver a robust backend for recipe management, ingredient detection, and personalized recipe recommendations.
 
+## API Docs
+
+https://dungnguyen73.github.io/recipes-recommender-backend/
+
 ## 🏗️ Project Structure
 
 The repository is divided into two main services and a shared infrastructure setup:
@@ -28,13 +32,17 @@ The repository is divided into two main services and a shared infrastructure set
 ## 🏃 Getting Started
 
 ### 1. Start the Inference Server
+
 To start the Roboflow inference server for ingredient detection:
+
 ```bash
 docker-compose up -d
 ```
 
 ### 2. Start the Recommendation Service
+
 Refer to the `recommendation-service/README.md` for detailed instructions on setting up the Python environment, installing dependencies, and running the FastAPI server and ZenML pipelines.
 
 ### 3. Start the Core App Backend
+
 Refer to the `app-backend/README.md` for details on installing npm dependencies, configuring environment variables, and starting the NestJS server.
