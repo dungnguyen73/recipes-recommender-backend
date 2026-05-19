@@ -926,7 +926,20 @@
     "contact": {}
   },
   "tags": [],
-  "servers": [],
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Local Development Server"
+    },
+    {
+      "url": "https://recipes-recommender-backend.vercel.app",
+      "description": "Production Server (Vercel)"
+    },
+    {
+      "url": "/",
+      "description": "Relative Host (Current Server)"
+    }
+  ],
   "components": {
     "securitySchemes": {
       "bearer": {
